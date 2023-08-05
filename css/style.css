@@ -201,7 +201,29 @@ body {
 
 .sidebar {
   background-color: #c69963;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+  cursor: pointer; }
+
+.nav-btn {
+  border-radius: 0;
+  border: none;
+  background-color: #fff;
+  width: 4.5rem;
+  height: 2px;
+  margin-top: 4rem;
+  cursor: inherit; }
+  .nav-btn::after, .nav-btn::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    width: 4.5rem;
+    height: 2px; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.4rem); }
 
 .story__pictures {
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
