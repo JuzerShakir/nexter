@@ -3,6 +3,14 @@
   grid-column: full-start / full-end;
 
   padding: 8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem;
+  }
 }
 
 .nav {
@@ -14,17 +22,26 @@
   align-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-small) {
+    grid-gap: 1rem;
+  }
+
   &__link:link,
   &__link:visited {
+    display: block;
+    font-family: $font-display;
     font-size: 1.5rem;
     color: #fff;
     text-decoration: none;
-    font-family: $font-display;
     text-transform: uppercase;
     text-align: center;
-    padding: 1.5rem;
-    display: block;
     transition: all 0.2s;
+
+    padding: 1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem;
+    }
   }
 
   &__link:hover,
@@ -36,11 +53,20 @@
 
 .copyright {
   font-size: 1.6rem;
-  text-align: center;
   color: $color-grey-light-2;
-  margin-top: 8rem;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 70%;
+
+  margin-top: 8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-top: 3rem;
+  }
 }

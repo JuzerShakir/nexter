@@ -1,10 +1,27 @@
 .homes {
   margin: 15rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin: 12rem 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 10rem 0;
+  }
+
   grid-column: center-start / center-end;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-gap: 5.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-gap: 4rem;
+  }
 }
 
 .home {
@@ -49,6 +66,11 @@
     width: 80%;
     transform: translateY(50%);
     z-index: 2;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+      padding: 0.6rem;
+    }
   }
 
   &__location,
@@ -61,9 +83,15 @@
   &__area,
   &__price {
     display: flex;
+    align-items: center;
+
     font-size: 1.5rem;
     margin-left: 2rem;
-    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+      margin-left: 1.5rem;
+    }
 
     svg {
       fill: $color-primary;
