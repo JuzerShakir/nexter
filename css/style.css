@@ -21,14 +21,10 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-  grid-template-columns: [sidebar-start] 80px [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-width: 62.5em) {
-    .container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 6rem calc(100vh - 6rem) repeat(6, min-content); } }
+      grid-template-rows: 100vh repeat(6, min-content); } }
 
 .features {
   grid-column: center-start / center-end;
@@ -334,51 +330,6 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase;
     color: #aaa; }
-
-.sidebar {
-  background-color: #c69963;
-  grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1;
-  display: flex;
-  justify-content: center;
-  cursor: pointer; }
-  @media only screen and (max-width: 62.5em) {
-    .sidebar {
-      grid-column: 1 / -1;
-      grid-row: 1 / 2; } }
-  @media only screen and (max-width: 62.5em) {
-    .sidebar {
-      justify-content: flex-end;
-      align-items: center; } }
-
-.nav-btn {
-  border-radius: 0;
-  border: none;
-  background-color: #fff;
-  width: 4.5rem;
-  height: 2px;
-  margin-top: 4rem;
-  cursor: inherit; }
-  @media only screen and (max-width: 62.5em) {
-    .nav-btn {
-      margin-top: 0;
-      margin-right: 3rem; } }
-  .nav-btn::after, .nav-btn::before {
-    content: "";
-    display: block;
-    background-color: #fff;
-    width: 4.5rem;
-    height: 2px; }
-  .nav-btn::before {
-    transform: translateY(-1.5rem); }
-    @media only screen and (max-width: 62.5em) {
-      .nav-btn::before {
-        transform: translateY(-1.2rem); } }
-  .nav-btn::after {
-    transform: translateY(1.4rem); }
-    @media only screen and (max-width: 62.5em) {
-      .nav-btn::after {
-        transform: translateY(1rem); } }
 
 .story__pictures {
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
