@@ -4,8 +4,16 @@
         rgba($color-primary, 0.5),
         rgba($color-primary, 0.5)
       ),
-      url(../img/back.jpg);
+      url(../img/back-1x.jpg);
     background-size: cover;
+
+    @media (min-resolution: 192dpi) and (min-width: 800px) {
+      background-image: linear-gradient(
+          rgba($color-primary, 0.5),
+          rgba($color-primary, 0.5)
+        ),
+        url(../img/back-2x.jpg);
+    }
 
     grid-column: full-start / col-end 4;
 
@@ -24,7 +32,6 @@
     grid-column: 2 / span 4;
     grid-row: 2 / span 4;
     width: 100%;
-    // align-self: center;
 
     box-shadow: 0 2rem 5rem rgba(#000, 0.1);
 
