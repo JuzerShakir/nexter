@@ -375,7 +375,7 @@ body {
   @media only screen and (max-width: 50em) {
     .story__content {
       grid-column: full-start / full-end;
-      grid-row: 5 / 6; } }
+      grid-row: 4 / 5; } }
 
 .story__text {
   font-size: 1.5rem;
