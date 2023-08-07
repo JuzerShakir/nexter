@@ -2,14 +2,10 @@
   background-color: $color-secondary;
   grid-column: full-start / full-end;
 
-  padding: 8rem;
+  padding: 6rem;
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 5rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    padding: 3rem;
+    padding: 4.5rem;
   }
 }
 
@@ -60,13 +56,9 @@
   text-align: center;
   width: 70%;
 
-  margin-top: 8rem;
+  margin-top: 6rem;
 
   @media only screen and (max-width: $bp-medium) {
-    margin-top: 5rem;
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    margin-top: 3rem;
+    margin-top: 4.5rem;
   }
 }
