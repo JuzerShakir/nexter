@@ -1,4 +1,14 @@
 .gallery {
+  margin-bottom: 12rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    margin-bottom: 9rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 6rem;
+  }
+
   background-color: $color-grey-light-1;
   grid-column: full-start / full-end;
 

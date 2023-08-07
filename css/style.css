@@ -107,6 +107,7 @@ body {
       margin-top: 4.5rem; } }
 
 .gallery {
+  margin-bottom: 12rem;
   background-color: #f9f7f6;
   grid-column: full-start / full-end;
   display: grid;
@@ -114,6 +115,12 @@ body {
   grid-template-rows: repeat(7, 5vw);
   grid-gap: 1.5rem;
   padding: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    .gallery {
+      margin-bottom: 9rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .gallery {
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 62.5em) {
     .gallery {
       grid-gap: 1rem;
