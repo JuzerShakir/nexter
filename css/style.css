@@ -233,12 +233,15 @@ body {
   @media only screen and (max-width: 37.5em) {
     .homes {
       margin: 10rem 0; } }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 75em) {
+    .homes {
+      grid-gap: 6rem; } }
+  @media only screen and (max-width: 62.5em) {
     .homes {
       grid-gap: 5.5rem; } }
   @media only screen and (max-width: 37.5em) {
     .homes {
-      grid-gap: 4rem; } }
+      grid-gap: 5rem; } }
 
 .home {
   background-color: #f9f7f6;
