@@ -24,7 +24,7 @@ body {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 50em) {
     .container {
-      grid-template-rows: 100vh repeat(6, min-content); } }
+      grid-template-rows: 100dvh repeat(6, min-content); } }
 
 .features {
   grid-column: center-start / center-end;
