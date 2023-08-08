@@ -62,6 +62,7 @@
 
     opacity: 0;
     width: 0;
+    visibility: hidden;
 
     transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -78,7 +79,7 @@
 
   &__item {
     margin: 1rem;
-    width: 0vw;
+    width: 100vw;
   }
 
   &__link {
@@ -89,7 +90,7 @@
       font-size: 3rem;
       font-weight: 300;
       padding: 1rem 2rem;
-      color: #fff;
+      color: transparent;
       text-decoration: none;
       text-transform: uppercase;
 
@@ -124,10 +125,11 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+    visibility: visible;
   }
 
-  &__checkbox:checked ~ &__nav &__item {
-    width: 100vw;
+  &__checkbox:checked ~ &__nav &__list &__item &__link {
+    color: #fff;
   }
 
   //  * ICON
