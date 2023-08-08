@@ -1,7 +1,7 @@
 <div align="center">
   <img src="img/favicon.png" />
   <h2>Nexter</h2>
-  <p>A static webpage showcasing CSS3 Grid layouts using SASS</p>
+  <p>A static webpage showcasing CSS3 Grid layouts using SASS (SCSS)</p>
 </div>
 
 <div align="center">
@@ -18,3 +18,13 @@
   <!-- MORE BADGES visit https://github.com/Ileriayo/markdown-badges -->
 
 </div>
+
+---
+
+### Features
+
+- ⭐ Using CSS3 **Grid** Layouts
+- ⭐ **Responsive font size**
+- ⭐ **Responsive Images** using Density & Resolution Switching using HTML & CSS
+- ⭐ **CSS Animations** using `keyframes` & `animation` and `transitions`-`transforms`
+- ⭐ **Responsive layouts** using media queries.
