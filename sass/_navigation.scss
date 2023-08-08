@@ -78,7 +78,7 @@
 
   &__item {
     margin: 1rem;
-    width: 100%;
+    width: 100vw;
   }
 
   &__link {
@@ -119,18 +119,6 @@
   // *  FUNCTIONALITY
   &__checkbox:checked ~ &__background {
     transform: scale(80);
-
-    @media only screen and (max-width: $bp-large) {
-      transform: scale(65);
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      transform: scale(50);
-    }
-
-    // @media only screen and (max-width: $bp-smaller) {
-    //   transform: scale(40);
-    // }
   }
 
   &__checkbox:checked ~ &__nav {
