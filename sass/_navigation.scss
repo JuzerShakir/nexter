@@ -92,10 +92,6 @@
       text-decoration: none;
       text-transform: uppercase;
 
-      @media only screen and (max-width: $bp-small) {
-        font-size: 2rem;
-      }
-
       background-image: linear-gradient(
         120deg,
         transparent 0%,
