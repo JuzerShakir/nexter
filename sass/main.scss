@@ -1,4 +1,14 @@
-@import "base";
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/extends";
+@import "abstracts/mixins";
+
+// base
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
 @import "features";
 @import "footer";
 @import "gallery";
@@ -7,4 +17,3 @@
 @import "navigation";
 @import "realtors";
 @import "story";
-@import "typography";

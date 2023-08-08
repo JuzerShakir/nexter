@@ -42,16 +42,6 @@
     animation: enlargeLogo 1.4s 0.8s;
   }
 
-  @keyframes enlargeLogo {
-    50% {
-      transform: scale(1.6);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
-
   &__seenon-text {
     font-size: 1.8rem;
     color: $color-grey-light-2;
