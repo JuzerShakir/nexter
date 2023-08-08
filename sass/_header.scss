@@ -32,8 +32,13 @@
   }
 
   &__logo {
-    height: 3rem;
+    height: 3.5rem;
     justify-self: center;
+
+    @media only screen and (max-width: $bp-small) {
+      justify-self: start;
+    }
+
     animation: enlargeLogo 1.4s 0.3s;
   }
 
