@@ -78,7 +78,7 @@
 
   &__item {
     margin: 1rem;
-    width: 100vw;
+    width: 0vw;
   }
 
   &__link {
@@ -124,6 +124,10 @@
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  &__checkbox:checked ~ &__nav &__item {
+    width: 100vw;
   }
 
   //  * ICON
