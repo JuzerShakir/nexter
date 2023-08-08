@@ -34,6 +34,17 @@
   &__logo {
     height: 3rem;
     justify-self: center;
+    animation: enlargeLogo 1.4s 0.3s;
+  }
+
+  @keyframes enlargeLogo {
+    50% {
+      transform: scale(1.6);
+    }
+
+    100% {
+      transform: scale(1);
+    }
   }
 
   &__seenon-text {
