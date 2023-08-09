@@ -7,7 +7,7 @@
     height: 6rem;
     width: 6rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tab-port) {
       height: 5rem;
       width: 5rem;
     }
@@ -21,7 +21,7 @@
     cursor: pointer;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
       top: 4rem;
     }
 
@@ -33,7 +33,7 @@
     height: 5rem;
     width: 5rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tab-port) {
       height: 4rem;
       width: 4rem;
     }
@@ -45,7 +45,7 @@
     background-image: radial-gradient($color-secondary, #345d8d);
     z-index: 100;
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
       top: 4.5rem;
     }
 
@@ -142,7 +142,7 @@
     position: relative;
     margin-top: 3rem;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tab-port) {
       margin-top: 2.5rem;
     }
 
@@ -151,7 +151,7 @@
     &::after {
       width: 3rem;
 
-      @media only screen and (max-width: $bp-medium) {
+      @include respond(tab-port) {
         width: 2.5rem;
       }
 
@@ -170,14 +170,14 @@
 
     &::before {
       top: -0.8rem;
-      @media only screen and (max-width: $bp-medium) {
+      @include respond(tab-port) {
         top: -0.7rem;
       }
     }
 
     &::after {
       top: 0.8rem;
-      @media only screen and (max-width: $bp-medium) {
+      @include respond(tab-port) {
         top: 0.7rem;
       }
     }

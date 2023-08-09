@@ -4,7 +4,7 @@
 
   grid-column: col-start 7 / full-end;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(tab-port) {
     grid-column: 1 / -1;
     padding: 3rem 0;
   }
@@ -22,11 +22,11 @@
     grid-column-gap: 2rem;
     align-items: center;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond(tab-port) {
       grid-template-columns: repeat(6, minmax(min-content, max-content));
     }
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
       grid-template-columns: repeat(2, max-content);
     }
   }

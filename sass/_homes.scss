@@ -1,11 +1,11 @@
 .homes {
   margin: 15rem 0;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(tab-port) {
     margin: 12rem 0;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(phone) {
     margin: 10rem 0;
   }
 
@@ -15,15 +15,15 @@
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @include respond(laptop) {
     grid-gap: 6rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @include respond(tab-land) {
     grid-gap: 5.5rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(phone) {
     grid-gap: 5rem;
   }
 }
@@ -71,7 +71,7 @@
     transform: translateY(50%);
     z-index: 2;
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
       font-size: 1.6rem;
       padding: 0.6rem;
     }
@@ -92,7 +92,7 @@
     font-size: 1.5rem;
     margin-left: 2rem;
 
-    @media only screen and (max-width: $bp-small) {
+    @include respond(phone) {
       font-size: 1.4rem;
       margin-left: 1.5rem;
     }

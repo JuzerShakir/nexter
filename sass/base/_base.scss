@@ -12,7 +12,7 @@ html {
   font-size: 62.5%;
   // 62.5 percent of 16px = 10px | We need font size of 10px.
 
-  @media only screen and (max-width: $bp-largest) {
+  @include respond(laptop) {
     font-size: 50%;
   }
 }
@@ -34,7 +34,7 @@ body {
     minmax(6rem, 1fr)
     [full-end];
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(tab-port) {
     grid-template-rows: 100dvh repeat(6, min-content);
   }
 }

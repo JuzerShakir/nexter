@@ -1,11 +1,11 @@
 .gallery {
   margin-bottom: 12rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond(tab-port) {
     margin-bottom: 9rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(phone) {
     margin-bottom: 6rem;
   }
 
@@ -18,12 +18,12 @@
   grid-gap: 1.5rem;
   padding: 1.5rem;
 
-  @media only screen and (max-width: $bp-large) {
+  @include respond(tab-land) {
     grid-gap: 1rem;
     padding: 1rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @include respond(phone) {
     grid-gap: 0.5rem;
     padding: 0.5rem;
   }
