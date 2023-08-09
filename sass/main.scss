@@ -1,19 +1,21 @@
 // abstracts
+// ! IMPORTANT to load these files first before any other css files
 @import "abstracts/variables";
-@import "abstracts/extends";
 @import "abstracts/mixins";
-
+@import "abstracts/extends";
 // base
-@import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+@import "base/animations";
 
-@import "features";
-@import "footer";
-@import "gallery";
-@import "header";
-@import "homes";
+// PAGES
+// * SEQUENCE these files according to their layouts
 @import "navigation";
+@import "header";
 @import "realtors";
+@import "features";
 @import "story";
+@import "homes";
+@import "gallery";
+@import "footer";
