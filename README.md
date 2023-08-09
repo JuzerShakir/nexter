@@ -26,5 +26,7 @@
 - ⭐ Using CSS3 **Grid** Layouts
 - ⭐ **Responsive font size**
 - ⭐ **Responsive Images** using Density & Resolution Switching using HTML & CSS
-- ⭐ **CSS Animations** using `keyframes` & `animation` and `transitions`-`transforms`
+- ⭐ **CSS Animations** using `keyframes`-`animation` and `transitions`-`transforms`
 - ⭐ **Responsive layouts** using media queries.
+- ⭐ Meaningful class names using **BEM** notation.
+- ⭐ Using node package manager to **compile, prefix & compress** CSS code.
